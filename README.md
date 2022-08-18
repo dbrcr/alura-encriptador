@@ -1,5 +1,5 @@
 
-# 🔏 Encriptador de texto
+# 🔏 Encriptador De Texto
 
 ## 💡 Descripción
 
@@ -9,9 +9,9 @@ El desafío consiste en construir una pagina web que encripte y desencripte text
 
 ---
 
-## 🔑 Llaves de encriptación
+## 🔑 Llaves de encripción
 
-Las llaves de encriptación solicitadas son las siguientes:
+Las llaves de encripción solicitadas son las siguientes:
 
 - La letra "**a**" es convertida a "**ai**".
 - La letra "**e**" es convertida a "**enter**".
