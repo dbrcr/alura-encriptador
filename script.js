@@ -29,6 +29,7 @@ function encriptar(){
 
   document.getElementById("msg").value = textoEncriptado;
   document.getElementById("input-texto").value = '';
+  document.getElementById("input-texto").focus();
 }
 
 // DESENCRIPCIÓN
@@ -59,6 +60,7 @@ function desencriptar(){
     
     document.getElementById("msg").value = textoDesencriptado;
     document.getElementById("input-texto").value = '';
+    document.getElementById("input-texto").focus();
 }
   
 // COPIAR
@@ -67,6 +69,8 @@ function copiar(){
   var textoCopiado = document.getElementById("msg");
   textoCopiado.select();
   navigator.clipboard.writeText(textoCopiado.value);
+  document.getElementById("msg").value = '';
+  document.getElementById("input-texto").focus();
 }
 
 // EVITAR RECARGA DE FORMULARIO
