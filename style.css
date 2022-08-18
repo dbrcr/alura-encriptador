@@ -23,7 +23,6 @@ body {
  }
   
 .titulo {
---    color: black;
     padding: 8px;
     text-align: center;
     margin: auto;
@@ -52,6 +51,7 @@ body {
     cursor: pointer;
     font-size: 14px;
     box-shadow: none;
+    font-family: Geneva;
 }
   
 .btn:hover {
