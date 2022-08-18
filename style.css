@@ -39,10 +39,14 @@ body {
     padding: 10px;
     margin-top: 10px;
     border-radius: 0.5em;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     justify-content: flex-end;
 }
   
+.btn:hover {
+    font-size: 17px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
 .text-input {
     border-radius: 0.5em;
     border: 1px solid rgba(0, 0, 0, 0.2);
