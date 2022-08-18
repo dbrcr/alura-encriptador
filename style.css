@@ -52,6 +52,7 @@ body {
     height: 150px;
     text-transform: lowercase;
     resize: none;
+    font-size: clamp(100%, 100%, 100%);
 }
 
 footer {
