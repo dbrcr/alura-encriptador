@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- ENCRIPTADOR DE TEXTO                  -->
+<!-- MODIFICADO POR DANIEL BERNARDO CASTRO -->
+
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Encriptador de texto ALURA-ORACLE</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+ 
+  <h1 class="titulo"><img class="logo" src="./alura-logo.svg" alt="Logo de Alura Latam">ORACLE ONE</h1>
+  <h2 class="titulo">Encriptador De Texto</h2>
+
+  <main class="main">
+
+    <section class="box">
+      <form id="formulario" action="" onClick="evitarRecarga(event)" autocomplete="off">
+        <label for="input-texto">Entrada:</label>
+        <textarea class="text-input" required autofocus id="input-texto" placeholder="Ingrese el texto aquí"></textarea>
+        <input class="btn" type="submit" value="encriptar" onClick="encriptar();">
+        <input class="btn" type="submit" value="desencriptar" onClick="desencriptar();">
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <p>Mensaje:</p>
+      <textarea class="text-input msg" id="msg" readonly=""></textarea>
+      <input class="btn" type="submit" value="copiar" id="btn-copy" onClick="copiar();">
+    </section>
+
+  </main>
+  
+  <footer>   
+      <p>Desarrollado por Daniel Bernardo Castro</p>
+      <a href="mailto:d6.8@outlook.com">contactarme</a>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
