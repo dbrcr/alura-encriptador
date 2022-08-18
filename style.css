@@ -4,8 +4,16 @@
     box-sizing: border-box;
   }
   
+:root {
+    --bg: white;
+    --color: black;
+    --linkcolor: blue;
+    --bgbox: lightsalmon;
+}
+
 body {
-    background-color: white;
+    background-color: var(--bg);
+    color: var(--color);
     font-family: Geneva;
 }
   
@@ -15,7 +23,7 @@ body {
  }
   
 .titulo {
-    color: black;
+--    color: black;
     padding: 8px;
     text-align: center;
     margin: auto;
@@ -25,10 +33,11 @@ body {
     padding: 10px;
     margin: 0 10px 0 10px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    background-color: lightsalmon;
+    background-color: var(--bgbox);
     border-radius: 0.5em;
     width: 30vw;
     height: auto;
+    color: var(--color);
 }
   
 .btn {
@@ -58,19 +67,34 @@ body {
     text-transform: lowercase;
     resize: none;
     font-size: clamp(130%, 130%, 130%);
+    color: var(--color);
+    background-color: var(--bg);
 }
 
 footer {
-    color: black;
+    color: var(--color);
     margin: 20px 0 20px 0;
     text-align: center;
     font-size: small;
+}
+
+footer a {
+     color: var(--linkcolor);
 }
   
 .logo {
     display: block;
     height:90px;
     margin: 3px auto 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: black;
+        --color: white;
+        --linkcolor: turquoise;
+        --bgbox: gray;
+    }
 }
 
 @media screen and (max-width: 440px) {
