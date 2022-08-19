@@ -33,7 +33,7 @@ body {
   
 .box {
     margin: 10px 10px 0px 10px;
-    padding: 7px;
+    padding: 10px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0.5em;
     width: 45vw;
@@ -71,7 +71,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.2);
     display: block;
     padding: 0.8em;
-    width: 97%;
+    width: 90%;
     height: 200px;
     text-transform: lowercase;
     resize: none;
