@@ -25,7 +25,7 @@
 
     <section class="box">
       <form id="formulario" action="" onClick="evitarRecarga(event)" autocomplete="off">
-        <label for="input-texto">Entrada:</label>
+        <label for="input-texto" class="etiqueta">Entrada:</label>
         <textarea class="text-input" required autofocus id="input-texto" placeholder="Ingrese el texto aquí"></textarea>
         <input class="btn" type="submit" value="encriptar" onClick="encriptar();">
         <input class="btn" type="submit" value="desencriptar" onClick="desencriptar();">
@@ -33,7 +33,7 @@
     </section>
   
     <section class="msg box">
-      <p>Mensaje:</p>
+      <p class="etiqueta">Mensaje:</p>
       <textarea class="text-input msg" id="msg" readonly=""></textarea>
       <input class="btn" type="submit" value="copiar" id="btn-copy" onClick="copiar();">
     </section>

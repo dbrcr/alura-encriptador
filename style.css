@@ -9,6 +9,7 @@
 :root {
     --bg: white;
     --color: black;
+    --coloretiqueta: black;
     --linkcolor: blue;
     --bgbox: lightsalmon;
 }
@@ -30,6 +31,10 @@ body {
     margin: auto;
 }
   
+.etiqueta {
+    color: var(--coloretiqueta);
+}
+
 .box {
     margin: 10px;
     padding: 7px;
@@ -93,7 +98,7 @@ footer a {
         --bg: black;
         --color: white;
         --linkcolor: turquoise;
-        --bgbox: gray;
+        --bgbox: #D6D6D6;
     }
 }
 
