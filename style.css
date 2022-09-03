@@ -41,6 +41,7 @@ body {
 .etiqueta {
     display: inline-block;
     font-weight: bold;
+    font-size: 18spx;
     margin-bottom: 5px;
     color: var(--coloretiqueta);
 }
