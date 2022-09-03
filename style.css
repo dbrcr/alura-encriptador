@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 * { 
     margin: 0;
@@ -13,11 +13,6 @@
     --linkcolor: #005252;
     --bgbox: lightsalmon;
     --bgfranja: blanchedalmond;
-}
-
-nav {
-    padding: 5px;
-    background-color: var(--bgfranja);
 }
 
 body {
