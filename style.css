@@ -10,7 +10,7 @@
     --bg: white;
     --color: black;
     --coloretiqueta: black;
-    --linkcolor: teal;
+    --linkcolor: darkslategrey;
     --bgbox: lightsalmon;
     --bgfranja: blanchedalmond;
 }
@@ -103,7 +103,6 @@ footer {
 footer a {
      color: var(--linkcolor);
      font-weight: bold;
-
 }
 
 @media (prefers-color-scheme: dark) {
