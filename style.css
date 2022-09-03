@@ -12,7 +12,12 @@
     --coloretiqueta: black;
     --linkcolor: teal;
     --bgbox: lightsalmon;
-    --bgfooter: #fff4e1;
+    --bgfranja: #fff4e1;
+}
+
+nav {
+    padding: 5px;
+    background-color: var(--bgfranja);
 }
 
 body {
@@ -22,11 +27,17 @@ body {
     text-align: center;
 }
   
+.logo {
+    display: block;
+    height:70px;
+    margin: 10px auto;
+}
+
 .main {
     display: flex;
     justify-content: center;
- }
-  
+ } 
+
 .titulo {
     padding: 5px;
     margin: auto;
@@ -83,20 +94,13 @@ footer {
     margin: 15px 0px;
     font-size: small;
     color: var(--color);
-    background-color: var(--bgfooter);
+    background-color: var(--bgfranja);
     padding: 5px;
 }
 
 footer a {
      color: var(--linkcolor);
 }
-  
-.logo {
-    display: block;
-    height:70px;
-    margin: 20px auto;
-}
-
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -104,7 +108,7 @@ footer a {
         --color: white;
         --linkcolor: MediumAquaMarine;
         --bgbox: aliceblue;
-        --bgfooter: black;
+        --bgfranja: black;
     }
 }
 
