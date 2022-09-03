@@ -12,6 +12,7 @@
     --coloretiqueta: black;
     --linkcolor: teal;
     --bgbox: lightsalmon;
+    --bgfooter: #fff4e1;
 }
 
 body {
@@ -82,6 +83,8 @@ footer {
     margin: 15px 0px;
     font-size: small;
     color: var(--color);
+    background-color: var(--bgfooter);
+    padding: 5px;
 }
 
 footer a {
@@ -94,12 +97,14 @@ footer a {
     margin: 20px auto;
 }
 
+
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: black;
         --color: white;
         --linkcolor: MediumAquaMarine;
         --bgbox: aliceblue;
+        --bgfooter: black;
     }
 }
 
