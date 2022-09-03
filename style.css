@@ -44,7 +44,9 @@ body {
 }
   
 .etiqueta {
+    display: inline-block;
     font-weight: bold;
+    margin-bottom: 5px;
     color: var(--coloretiqueta);
 }
 
@@ -84,8 +86,8 @@ body {
     width: 100%;
     height: 155px;
     text-transform: lowercase;
-    resize: none;
     font-size: clamp(130%, 130%, 130%);
+    resize: none;
     color: var(--color);
     background-color: var(--bg);
 }
