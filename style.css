@@ -117,7 +117,7 @@ footer a {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
     .main, .box {
         display: block;
         padding: 10px;
