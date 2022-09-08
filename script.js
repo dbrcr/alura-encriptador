@@ -79,3 +79,11 @@ function evitarRecarga(event){
   event.preventDefault();
   return false;
 }
+
+var btnEncriptar = document.getElementById("btn-enc");
+var btnDesencriptar = document.getElementById("btn-des");
+var btnCopiar = document.getElementById("btn-copy");
+
+btnEncriptar.onclick = encriptar;
+btnDesencriptar.onclick = desencriptar;
+btnCopiar.onclick = copiar;

@@ -26,8 +26,8 @@
       <form id="formulario" action="" onClick="evitarRecarga(event)" autocomplete="off">
         <label for="input-texto" class="etiqueta">Entrada:</label>
         <textarea class="text-input" required autofocus id="input-texto" placeholder="Ingrese el texto aquí"></textarea>
-        <input class="btn" type="submit" value="encriptar" onClick="encriptar();">
-        <input class="btn" type="submit" value="desencriptar" onClick="desencriptar();">
+        <input class="btn" type="submit" value="encriptar" id="btn-enc">
+        <input class="btn" type="submit" value="desencriptar" id="btn-des">
       </form>
     </section>
   
@@ -35,7 +35,7 @@
       <form id="formulario" action="" onClick="evitarRecarga(event)" autocomplete="off">
         <label for="msg" class="etiqueta">Mensaje:</label> 
         <textarea class="text-input msg" id="msg" readonly=""></textarea>
-        <input class="btn" type="submit" value="copiar" id="btn-copy" onClick="copiar();">
+        <input class="btn" type="submit" value="copiar" id="btn-copy">
       </form>
     </section>
 
