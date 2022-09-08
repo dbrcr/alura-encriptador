@@ -15,7 +15,6 @@ La acentuación es convertida a normal.
 ********************************************/
 
 function encriptar(){
-  alert("Encriptando...");
   var textoIngresado = document.getElementById("input-texto").value;
 
   textoIngresado = textoIngresado.trim().toLowerCase()
@@ -28,6 +27,7 @@ function encriptar(){
       .replace(/o/g,"ober")
       .replace(/u/g,"ufat");
 
+  alert(textoEncriptado);
   document.getElementById("output-texto").value = textoEncriptado;
   document.getElementById("output-texto").innerHTML = textoEncriptado;
   document.getElementById("input-texto").value = '';
@@ -48,7 +48,6 @@ La acentuación es convertida a normal.
 ********************************************/
 
 function desencriptar(){
-    alert("Desencriptando...");
     var textoIngresado = document.getElementById("input-texto").value;
 
     textoIngresado = textoIngresado.trim().toLowerCase()
@@ -61,6 +60,7 @@ function desencriptar(){
         .replace(/ober/g,"o")
         .replace(/ufat/g,"u");
     
+    alert(textoDesencriptado);
     document.getElementById("output-texto").value = textoDesencriptado;
     document.getElementById("output-texto").innerHTML = textoDesencriptado;
     document.getElementById("input-texto").value = '';
@@ -70,10 +70,10 @@ function desencriptar(){
 // COPIAR
 
 function copiar(){
-  alert("Copiando...");
   var textoCopiado = document.getElementById("output-texto");
   textoCopiado.select();
   navigator.clipboard.writeText(textoCopiado.value);
+  alert(textoCopiado);
   document.getElementById("output-texto").value = '';
   document.getElementById("input-texto").focus();
 }
