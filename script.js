@@ -28,6 +28,7 @@ function encriptar(){
       .replace(/u/g,"ufat");
 
   document.getElementById("msg").value = textoEncriptado;
+  document.getElementById("msg").innerHTML = textoEncriptado;
   document.getElementById("input-texto").value = '';
   document.getElementById("input-texto").focus();
 }
@@ -83,6 +84,9 @@ function evitarRecarga(event){
 var btnEncriptar = document.getElementById("btn-enc");
 var btnDesencriptar = document.getElementById("btn-des");
 var btnCopiar = document.getElementById("btn-copy");
+
+// var texto = document.getElementById("input-texto");
+// var txtSaida = document.getElementById("txt-resposta");
 
 btnEncriptar.onclick = encriptar;
 btnDesencriptar.onclick = desencriptar;
