@@ -15,15 +15,17 @@ La acentuación es convertida a normal.
 ********************************************/
 
 function encriptar(){
-  var textoIngresado = document.getElementById("input-texto").value;
+  let textoIngresado = document.getElementById("input-texto").value;
 
   textoIngresado = textoIngresado.trim().toLowerCase()
         .replace(/[\u0300-\u036f]/g, "");
 
-//      .normalize("NFD")
-//      .replace(/[\u0300-\u036f]/g, "");
+  let r = textoIngresado;
+  let non_asciis = {'a': '[àáâãäå]', 'ae': 'æ', 'c': 'ç', 'e': '[èéêë]', 'i': '[ìíîï]', 'n': 'ñ', 'o': '[òóôõö]', 'oe': 'œ', 'u': '[ùúûűü]', 'y': '[ýÿ]'};
+  for (i in non_asciis) { r = r.replace(new RegExp(non_asciis[i], 'g'), i); }
+  textoIngresado = r;
 
-  var textoEncriptado = textoIngresado.replace(/e/g,"enter")
+  let textoEncriptado = textoIngresado.replace(/e/g,"enter")
       .replace(/i/g,"imes")
       .replace(/a/g,"ai")
       .replace(/o/g,"ober")
@@ -48,13 +50,17 @@ La acentuación es convertida a normal.
 ********************************************/
 
 function desencriptar(){
-    var textoIngresado = document.getElementById("input-texto").value;
+    let textoIngresado = document.getElementById("input-texto").value;
 
     textoIngresado = textoIngresado.trim().toLowerCase()
         .replace(/[\u0300-\u036f]/g, "");
-//        .normalize("NFD")
 
-    var textoDesencriptado = textoIngresado.replace(/enter/g, "e")
+  let r = textoIngresado;
+  let non_asciis = {'a': '[àáâãäå]', 'ae': 'æ', 'c': 'ç', 'e': '[èéêë]', 'i': '[ìíîï]', 'n': 'ñ', 'o': '[òóôõö]', 'oe': 'œ', 'u': '[ùúûűü]', 'y': '[ýÿ]'};
+  for (i in non_asciis) { r = r.replace(new RegExp(non_asciis[i], 'g'), i); }
+  textoIngresado = r;
+
+    let textoDesencriptado = textoIngresado.replace(/enter/g, "e")
         .replace(/imes/g,"i")
         .replace(/ai/g,"a")
         .replace(/ober/g,"o")
@@ -68,7 +74,7 @@ function desencriptar(){
 // COPIAR
 
 function copiar(){
-  var textoCopiado = document.getElementById("output-texto");
+  let textoCopiado = document.getElementById("output-texto");
   textoCopiado.select();
   navigator.clipboard.writeText(textoCopiado.value);
   document.getElementById("output-texto").value = '';
