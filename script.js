@@ -19,10 +19,12 @@ function encriptar(){
   var textoIngresado = document.getElementById("input-texto").value;
 
   textoIngresado = textoIngresado.trim().toLowerCase()
+        .replace(/[\u0300-\u036f]/g, "");
+
 //      .normalize("NFD")
 //      .replace(/[\u0300-\u036f]/g, "");
 
-  alert("Convertido a minusculas."); 
+  alert("Convertido a minusculas y replace."); 
   
   var textoEncriptado = textoIngresado.replace(/e/g,"enter")
       .replace(/i/g,"imes")
