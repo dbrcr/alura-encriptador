@@ -21,6 +21,8 @@ function encriptar(){
   textoIngresado = textoIngresado.trim().toLowerCase()
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "");
+
+  alert("Convertido a minusculas.");
   
   var textoEncriptado = textoIngresado.replace(/e/g,"enter")
       .replace(/i/g,"imes")
@@ -28,7 +30,7 @@ function encriptar(){
       .replace(/o/g,"ober")
       .replace(/u/g,"ufat");
 
-  alert("Texto encrptado: " + textoEncriptado);
+  alert("Texto encriptado: " + textoEncriptado);
   document.getElementById("output-texto").value = textoEncriptado;
   document.getElementById("output-texto").innerHTML = textoEncriptado;
   document.getElementById("input-texto").value = '';
