@@ -56,8 +56,8 @@ function desencriptar(){
     var textoIngresado = document.getElementById("input-texto").value;
 
     textoIngresado = textoIngresado.trim().toLowerCase()
-        .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "");
+//        .normalize("NFD")
 
     var textoDesencriptado = textoIngresado.replace(/enter/g, "e")
         .replace(/imes/g,"i")
