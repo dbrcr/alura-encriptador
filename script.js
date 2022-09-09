@@ -18,7 +18,9 @@ function encriptar(){
   alert("Encriptando...");
   var textoIngresado = document.getElementById("input-texto").value;
 
-  textoIngresado = textoIngresado.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  textoIngresado = textoIngresado.trim().toLowerCase()
+//      .normalize("NFD")
+//      .replace(/[\u0300-\u036f]/g, "");
 
   alert("Convertido a minusculas."); 
   
