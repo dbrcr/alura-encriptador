@@ -70,7 +70,7 @@ function desencriptar(){
 // COPIAR
 
 function copiar(){
-  var textoCopiado = document.getElementById("output-texto");
+   var textoCopiado = document.getElementById("output-texto");
   textoCopiado.select();
   navigator.clipboard.writeText(textoCopiado.value);
   alert(textoCopiado);
