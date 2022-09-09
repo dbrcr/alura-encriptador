@@ -22,7 +22,7 @@ function encriptar(){
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "");
 
-  alert("Convertido a minusculas.");
+  alert("Convertido a minusculas."); 
   
   var textoEncriptado = textoIngresado.replace(/e/g,"enter")
       .replace(/i/g,"imes")
