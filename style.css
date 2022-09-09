@@ -94,10 +94,6 @@ body {
     background-color: var(--bg);
 }
 
-.btn:focus {
-    color: red;
-}
-
 footer {
     margin: 15px 0px;
     font-size: small;

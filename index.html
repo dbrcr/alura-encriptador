@@ -18,24 +18,24 @@
 
 <body>
   <h3 class="titulo"><img class="logo" src="./alura-logo.svg" alt="Logo de Alura Latam">ORACLE ONE</h3>
-  <h1 class="titulo"><img class="lock" src="./lock.svg" alt="logo de un candado">Encriptador De Texto</h1>
+  <h2 class="titulo"><img class="lock" src="./lock.svg" alt="logo de un candado">Encriptador De Texto</h2>
 
   <main class="main">
 
     <section class="box">
       <form id="formulario" action="" onClick="evitarRecarga(event)" autocomplete="off">
         <label for="input-texto" class="etiqueta">Entrada:</label>
-        <textarea class="text-input" required autofocus id="input-texto" placeholder="Ingrese el texto aquí"></textarea>
-        <input class="btn" type="submit" value="encriptar" tabindex="0" onclick="encriptar();" onkeydown="encriptar();"   id="btn-enc">
-        <input class="btn" type="submit" value="desencriptar" tabindex="0" onclick="desencriptar();" onkeydown="desencriptar();" id="btn-des">
+        <textarea class="text-input" required autofocus tabindex="0" id="input-texto" placeholder="Ingrese el texto aquí"></textarea>
+        <input class="btn" type="submit" tabindex="0" value="encriptar" onClick="encriptar()">
+        <input class="btn" type="submit" tabindex="0" value="desencriptar" onClick="desencriptar()">
       </form>
     </section>
   
     <section class="box">
       <form id="formulario" action="" onClick="evitarRecarga(event)" autocomplete="off">
         <label for="output-texto" class="etiqueta">Mensaje:</label> 
-        <textarea class="text-input" id="output-texto" readonly=""></textarea>
-        <input class="btn" type="submit" value="copiar" tabindex="0" id="btn-copy">
+        <textarea class="text-input" tabindex="0" id="output-texto" readonly=""></textarea>
+        <input class="btn" type="submit" tabindex="0" value="copiar" id="btn-copy" onClick="copiar()">
       </form>
     </section>
 
