@@ -15,7 +15,6 @@ La acentuación es convertida a normal.
 ********************************************/
 
 function encriptar(){
-  alert("Encriptando...");
   var textoIngresado = document.getElementById("input-texto").value;
 
   textoIngresado = textoIngresado.trim().toLowerCase()
@@ -24,15 +23,12 @@ function encriptar(){
 //      .normalize("NFD")
 //      .replace(/[\u0300-\u036f]/g, "");
 
-  alert("Convertido a minusculas y replace."); 
-  
   var textoEncriptado = textoIngresado.replace(/e/g,"enter")
       .replace(/i/g,"imes")
       .replace(/a/g,"ai")
       .replace(/o/g,"ober")
       .replace(/u/g,"ufat");
 
-  alert("Texto encriptado: " + textoEncriptado);
   document.getElementById("output-texto").value = textoEncriptado;
   document.getElementById("output-texto").innerHTML = textoEncriptado;
   document.getElementById("input-texto").value = '';
@@ -65,7 +61,6 @@ function desencriptar(){
         .replace(/ober/g,"o")
         .replace(/ufat/g,"u");
     
-    alert(textoDesencriptado);
     document.getElementById("output-texto").value = textoDesencriptado;
     document.getElementById("output-texto").innerHTML = textoDesencriptado;
     document.getElementById("input-texto").value = '';
@@ -78,7 +73,6 @@ function copiar(){
   var textoCopiado = document.getElementById("output-texto");
   textoCopiado.select();
   navigator.clipboard.writeText(textoCopiado.value);
-  alert(textoCopiado);
   document.getElementById("output-texto").value = '';
   document.getElementById("input-texto").focus();
 }
