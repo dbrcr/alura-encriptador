@@ -98,5 +98,6 @@ var btnCopiar = document.getElementById("btn-copy");
 // var txtSaida = document.getElementById("txt-resposta");
 
 btnEncriptar.onclick = encriptar;
+btnEncriptar.onkeydown = encriptar;
 btnDesencriptar.onclick = desencriptar;
 btnCopiar.onclick = copiar;
