@@ -26,8 +26,8 @@
       <form id="formulario" action="" onClick="evitarRecarga(event)" autocomplete="off">
         <label for="input-texto" class="etiqueta">Entrada:</label>
         <textarea class="text-input" required autofocus id="input-texto" placeholder="Ingrese el texto aquí"></textarea>
-        <input class="btn" type="submit" value="encriptar" tabindex="0" id="btn-enc">
-        <input class="btn" type="submit" value="desencriptar" tabindex="0" id="btn-des">
+        <input class="btn" type="submit" value="encriptar" tabindex="0" onclick="encriptar();" onkeydown="encriptar();"   id="btn-enc">
+        <input class="btn" type="submit" value="desencriptar" tabindex="0" onclick="desencriptar();" onkeydown="desencriptar();" id="btn-des">
       </form>
     </section>
   

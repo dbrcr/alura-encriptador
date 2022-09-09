@@ -90,6 +90,7 @@ function evitarRecarga(event){
   return false;
 }
 
+/*
 var btnEncriptar = document.getElementById("btn-enc");
 var btnDesencriptar = document.getElementById("btn-des");
 var btnCopiar = document.getElementById("btn-copy");
@@ -101,4 +102,5 @@ btnEncriptar.onclick = encriptar;
 btnEncriptar.onkeydown = encriptar;
 btnDesencriptar.onclick = desencriptar;
 btnDesencriptar.onkeydown = desencriptar;
-btnCopiar.onclick = copiar;
+btnCopiar.onclick = copiar; 
+*/
