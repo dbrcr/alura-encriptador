@@ -100,4 +100,5 @@ var btnCopiar = document.getElementById("btn-copy");
 btnEncriptar.onclick = encriptar;
 btnEncriptar.onkeydown = encriptar;
 btnDesencriptar.onclick = desencriptar;
+btnDesencriptar.onkeydown = desencriptar;
 btnCopiar.onclick = copiar;
