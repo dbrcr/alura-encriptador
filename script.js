@@ -22,7 +22,7 @@ function encriptar(){
 
   let r = textoIngresado;
   let non_asciis = {'a': '[àáâãäå]', 'ae': 'æ', 'c': 'ç', 'e': '[èéêë]', 'i': '[ìíîï]', 'n': 'ñ', 'o': '[òóôõö]', 'oe': 'œ', 'u': '[ùúûűü]', 'y': '[ýÿ]'};
-  for (i in non_asciis) { r = r.replace(new RegExp(non_asciis[i], 'g'), i); }
+  for (i in non_asciis) { r = r.replace(RegExp(non_asciis[i], 'g'), i); }
   textoIngresado = r;
 
   let textoEncriptado = textoIngresado.replace(/e/g,"enter")
@@ -57,7 +57,7 @@ function desencriptar(){
 
   let r = textoIngresado;
   let non_asciis = {'a': '[àáâãäå]', 'ae': 'æ', 'c': 'ç', 'e': '[èéêë]', 'i': '[ìíîï]', 'n': 'ñ', 'o': '[òóôõö]', 'oe': 'œ', 'u': '[ùúûűü]', 'y': '[ýÿ]'};
-  for (i in non_asciis) { r = r.replace(new RegExp(non_asciis[i], 'g'), i); }
+  for (i in non_asciis) { r = r.replace(RegExp(non_asciis[i], 'g'), i); }
   textoIngresado = r;
 
     let textoDesencriptado = textoIngresado.replace(/enter/g, "e")
