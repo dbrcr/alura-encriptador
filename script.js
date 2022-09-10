@@ -57,6 +57,7 @@ function desencriptar(){
         .replace(/[\u0300-\u036f]/g, "");
 
   let r = textoIngresado;
+  alert("quitar acentos");
   let non_asciis = {'a': '[àáâãäå]', 'ae': 'æ', 'c': 'ç', 'e': '[èéêë]', 'i': '[ìíîï]', 'n': 'ñ', 'o': '[òóôõö]', 'oe': 'œ', 'u': '[ùúûűü]', 'y': '[ýÿ]'};
   for (i in non_asciis) { r = r.replace(RegExp(non_asciis[i], 'g'), i); }
   textoIngresado = r;
